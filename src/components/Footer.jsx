@@ -9,7 +9,7 @@ import Logo2 from '../assets/images/logo2.svg';
 const Footer = () => {
     return (
         <Box className="bg-[#191A1B] text-white w-full">
-            <Box className="container mx-auto flex justify-between items-start h-[250px] pt-6 py-10  px-4 ">
+            <Box className="container mx-auto flex justify-between items-start h-[250px] p-[10%] py-[1%]  px-4 ">
                 <Box className={`flex flex-col justify-between h-full`}>
                     <Box >
                         <Box className="flex items-center mb-2">
