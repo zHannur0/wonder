@@ -4,7 +4,7 @@ const OrderStatistics = () => {
     return (
         <Box className="bg-white rounded-[30px] shadow-xl w-[35%] p-[20px] space-y-4 mx-auto flex flex-col justify-center">
             <h2 className="text-[24px]">Статистика заказов</h2>
-            <Box className="flex items-center justify-center gap-4">
+            <Box className="flex items-center justify-center gap-[10px]">
                 <Box className="relative">
                     <CircularProgress
                         variant="determinate"
@@ -25,7 +25,7 @@ const OrderStatistics = () => {
                         <Typography className="text-2xl font-semibold text-red-500">0,9%</Typography>
                     </Box>
                 </Box>
-                <Box className="text-center">
+                <Box className="text-start">
                     <p className="text-[20px] font-bold">58 отменено</p>
                     <p className="text-[13px] text-gray-500">Из 6560 заказов</p>
                 </Box>
