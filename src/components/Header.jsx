@@ -29,7 +29,7 @@ const Header = () => {
                     <SearchIcon className="w-4 h-4" />
                 </IconButton>
             </div>
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-4">
                 <Badge badgeContent={4} color="error">
                     <NotificationsIcon />
                 </Badge>
@@ -48,8 +48,7 @@ const Header = () => {
                     <MenuItem onClick={handleClose}>Русский</MenuItem>
                     <MenuItem onClick={handleClose}>English</MenuItem>
                 </Menu>
-                <div className={`w-[40px] h-[40px] rounded-full bg-gray-300`}></div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 border-l-2 border-black pl-4">
                     <Avatar alt="Samayryn" src={``} />
                     <span>Samayryn</span>
                 </div>

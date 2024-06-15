@@ -14,12 +14,12 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
-        <div className="w-full max-w-[300px] bg-[#191A1B] flex flex-col items-center gap-[35px] p-[25px]">
+        <div className="w-full max-w-[300px] bg-[#191A1B] flex flex-col items-center gap-[35px] p-[25px] min-h-[100vh]">
             <img src={logo} alt="logo" className="w-full max-w-[200px] " />
             <div className="flex flex-col gap-[20px]">
                 {sidebar.map((item, index) => (
                     <Link to={item.link} key={index} className="w-full">
-                    <div className="flex items-end gap-[20px] p-[20px]">
+                    <div className="flex items-end gap-[20px]">
                         <div className="w-[30px] h-[30px] flex items-center justify-center">
                             <img src={item.icon} alt={item.title} />
                         </div>
@@ -71,12 +71,12 @@ const sidebar = [
     {
         title: 'Поставка',
         icon: deliveryIcon,
-        link: '/'
+        link: '/delivery'
     },
     {
         title: 'Статистика',
         icon: statisticsIcon,
-        link: '/'
+        link: '/statistics'
     },
     {
         title: 'Бот',
